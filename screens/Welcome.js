@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { colors } from "../colors";
@@ -27,3 +28,24 @@ export default function Welcome({ navigation }) {
     </AuthLayout>
   );
 }
+=======
+import { Text, TouchableOpacity, View } from "react-native";
+
+export default function Welcome({navigation}) {
+  return (
+    <View>
+      <Text>반갑습니다.</Text>
+    <TouchableOpacity onPress={()=> navigation.navigate("CreateAccount")}>
+          <View>
+      <Text>Go to Create Account.</Text>
+    </View>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={()=> navigation.navigate("LogIn")}>
+          <View>
+      <Text>Go to Log in.</Text>
+    </View>
+    </TouchableOpacity>
+    </View>
+  );
+}
+>>>>>>> 2a7f976dce559143e9569add033a81dd8fe9fe56
