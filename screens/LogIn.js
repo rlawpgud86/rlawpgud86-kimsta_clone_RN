@@ -25,7 +25,7 @@ export default function Login({ route: { params } }) {
     },
   });
   const passwordRef = useRef();
-  const onCompleted = async (data) => {
+  const eted = async (data) => {
     const {
       login: { ok, token },
     } = data;
